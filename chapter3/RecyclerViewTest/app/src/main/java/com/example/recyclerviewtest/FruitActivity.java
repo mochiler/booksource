@@ -1,8 +1,7 @@
 package com.example.recyclerviewtest;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 
@@ -10,9 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class MainActivity extends AppCompatActivity {
+public class FruitActivity extends AppCompatActivity {
 
-    private List<Fruit> fruitList = new ArrayList<Fruit>();
+   // private  List<Fruit> mFruitList ;  //mFruitList == null  , mFruitList.isEmpty();
+    private List<Fruit> fruitList = new ArrayList<Fruit>();  //fruitList.isEmpty()
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

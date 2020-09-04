@@ -48,9 +48,8 @@ public class MainActivity extends AppCompatActivity {
         intentFilter = new IntentFilter();
         intentFilter.addAction("com.example.broadcasttest.LOCAL_BROADCAST");
         localReceiver = new LocalReceiver();
-        localBroadcastManager.registerReceiver(localReceiver, intentFilter); // 注册本地广播监听器
+        localBroadcastManager.registerReceiver(localReceiver, intentFilter); //动态 注册本地广播监听器
     }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -64,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
         public void onReceive(Context context, Intent intent) {
             Toast.makeText(context, "成功接收自定义本地广播！", Toast.LENGTH_SHORT).show();
         }
-
     }
 
 //    class NetworkChgeReceiver extends BroadcastReceiver {

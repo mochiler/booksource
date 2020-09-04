@@ -1,5 +1,6 @@
 package com.example.androidthreadtest;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -16,8 +17,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private  TextView text;
 
+    @SuppressLint("HandlerLeak")
     private Handler handler = new Handler() {
 
+        @SuppressLint("SetTextI18n")
         public void handleMessage(Message msg) {
             switch (msg.what) {
                 case UPDATE_TEXT:
@@ -34,7 +37,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
     };
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

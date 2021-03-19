@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class Hello1 extends AppCompatActivity implements View.OnClickListener {
 
-    private static final String TAG = "Hello1";
+    private static final String TAG = "Hello1001";
     private static int objCount = 0;
     private int mObjCount;
 

@@ -10,7 +10,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Hello3">
             <intent-filter>
-                <action android:name="com.example.helloworld.intent.action.H3"></action>
+                <action android:name="com.example.helloworld.intent.action.H"></action>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

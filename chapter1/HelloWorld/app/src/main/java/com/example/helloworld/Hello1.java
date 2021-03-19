@@ -62,6 +62,7 @@ public class Hello1 extends AppCompatActivity implements View.OnClickListener {
         Log.d(TAG, mObjCount + "-onDestroy");
     }
 
+
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.btToHello1) {
@@ -76,7 +77,7 @@ public class Hello1 extends AppCompatActivity implements View.OnClickListener {
         }
         if (v.getId() == R.id.btToHello3) {
             Intent intent;
-            String string1 = "com.example.helloworld.intent.action.H3";
+            String string1 = "com.example.helloworld.intent.action.H";
             // intent = new Intent(this, Hello3.class);
             intent = new Intent(string1);
             startActivity(intent);

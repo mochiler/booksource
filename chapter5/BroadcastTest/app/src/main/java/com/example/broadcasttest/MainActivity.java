@@ -33,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
 //        networkChangeReceiver = new NetworkChangeReceiver();
 //        registerReceiver(networkChangeReceiver, intentFilter);
         localBroadcastManager = LocalBroadcastManager.getInstance(this); // 获取实例
+        intentFilter = new IntentFilter();
+        intentFilter.addAction("com.example.broadcasttest.LOCAL_BROADCAST");
+        localReceiver = new LocalReceiver();
+        localBroadcastManager.registerReceiver(localReceiver, intentFilter); //动态 注册本地广播监听器
         Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,15 +44,11 @@ public class MainActivity extends AppCompatActivity {
                 //发送全局广播
                Intent intent = new Intent("com.example.broadcasttest.MY_BROADCAST");
                 sendBroadcast(intent);
-                // 发送本地广播
+                // 发送局部广播
                  intent = new Intent("com.example.broadcasttest.LOCAL_BROADCAST");
                 localBroadcastManager.sendBroadcast(intent);
             }
         });
-        intentFilter = new IntentFilter();
-        intentFilter.addAction("com.example.broadcasttest.LOCAL_BROADCAST");
-        localReceiver = new LocalReceiver();
-        localBroadcastManager.registerReceiver(localReceiver, intentFilter); //动态 注册本地广播监听器
     }
     @Override
     protected void onDestroy() {
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onReceive(Context context, Intent intent) {
-            Toast.makeText(context, "成功接收自定义本地广播！", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "成功接收自定义局部广播！", Toast.LENGTH_SHORT).show();
         }
     }
 

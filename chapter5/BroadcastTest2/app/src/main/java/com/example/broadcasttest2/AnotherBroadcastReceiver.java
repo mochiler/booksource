@@ -9,8 +9,8 @@ public class AnotherBroadcastReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Toast.makeText(context, "received in AnotherBroadcastReceiver",
-                Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "接收同一个用户自定义全局广播的独立APP",
+                Toast.LENGTH_LONG).show();
     }
 
 }

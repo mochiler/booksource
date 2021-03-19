@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FilePersistenceTest.iml" filepath="$PROJECT_DIR$/FilePersistenceTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FilePersistenceTest.iml" filepath="$PROJECT_DIR$/FilePersistenceTest.iml" group="FilePersistenceTest" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="FilePersistenceTest/app" />
     </modules>
   </component>
 </project>

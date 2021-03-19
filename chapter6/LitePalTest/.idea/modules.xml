@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LitePalTest.iml" filepath="$PROJECT_DIR$/LitePalTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LitePalTest.iml" filepath="$PROJECT_DIR$/LitePalTest.iml" group="LitePalTest" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="LitePalTest/app" />
     </modules>
   </component>
 </project>

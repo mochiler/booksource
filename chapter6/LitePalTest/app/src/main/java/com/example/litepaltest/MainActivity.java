@@ -35,6 +35,13 @@ public class MainActivity extends AppCompatActivity {
                 book.setPrice(16.96);
                 book.setPress("Unknow");
                 book.save();
+                book.setName("The Lost Symbol");
+                book.setAuthor("Dan Brown");
+                book.setPages(233);
+                book.setPrice(14.99);
+                book.setPress("Anchor");
+                book.save();
+
             }
         });
         Button updateData = (Button) findViewById(R.id.update_data);

@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support:support-core-ui:24.2.1@aar">
+    <ANNOTATIONS>
+      <root url="jar://$APPLICATION_HOME_DIR$/.gralde/caches/transforms-2/files-2.1/10d23e3aef574fcf5e5d44f8a63ec50f/support-core-ui-24.2.1/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$APPLICATION_HOME_DIR$/.gralde/caches/transforms-2/files-2.1/10d23e3aef574fcf5e5d44f8a63ec50f/support-core-ui-24.2.1/jars/classes.jar!/" />
+      <root url="file://$APPLICATION_HOME_DIR$/.gralde/caches/transforms-2/files-2.1/10d23e3aef574fcf5e5d44f8a63ec50f/support-core-ui-24.2.1/res" />
+      <root url="file://$APPLICATION_HOME_DIR$/.gralde/caches/transforms-2/files-2.1/10d23e3aef574fcf5e5d44f8a63ec50f/support-core-ui-24.2.1/AndroidManifest.xml" />
+      <root url="jar://$APPLICATION_HOME_DIR$/.gralde/caches/transforms-2/files-2.1/10d23e3aef574fcf5e5d44f8a63ec50f/support-core-ui-24.2.1/jars/libs/internal_impl-24.2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$APPLICATION_HOME_DIR$/.gralde/caches/modules-2/files-2.1/com.android.support/support-core-ui/24.2.1/81323179bc485b52c7fdc933ed314ff297a07c46/support-core-ui-24.2.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$APPLICATION_HOME_DIR$/.gralde/caches/modules-2/files-2.1/com.android.support/support-core-ui/24.2.1/5c7dcf1dd12d21ddc8e89bd02cec6fabc9d6aee5/support-core-ui-24.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

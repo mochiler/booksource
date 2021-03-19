@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RuntimePermissionTest.iml" filepath="$PROJECT_DIR$/RuntimePermissionTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RuntimePermissionTest.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RuntimePermissionTest.app.iml" />
     </modules>
   </component>
 </project>

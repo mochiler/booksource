@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/UILayoutTest.iml" filepath="$PROJECT_DIR$/.idea/modules/UILayoutTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/UILayoutTest.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/UILayoutTest.app.iml" />
     </modules>
   </component>
 </project>

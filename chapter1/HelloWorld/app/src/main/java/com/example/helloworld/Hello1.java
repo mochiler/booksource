@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class Hello1 extends AppCompatActivity implements View.OnClickListener {
 
-    private static final String TAG = "Hello1001";
+    private static final String TAG = "Hello1";
     private static int objCount = 0;
     private int mObjCount;
 
@@ -36,7 +36,7 @@ public class Hello1 extends AppCompatActivity implements View.OnClickListener {
         super.onResume();
         Log.d(TAG, mObjCount + "-onResume");
     }
-
+    
     @Override
     protected void onPostResume() {
         super.onPostResume();
@@ -72,7 +72,7 @@ public class Hello1 extends AppCompatActivity implements View.OnClickListener {
         }
         if (v.getId() == R.id.btToHello2) {
             Intent intent;
-            intent = new Intent(this, Hello2.class);
+            intent = new Intent(this, Hello2Activity.class);
             startActivity(intent);
         }
         if (v.getId() == R.id.btToHello3) {

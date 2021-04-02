@@ -68,7 +68,7 @@ public class Hello3 extends AppCompatActivity implements View.OnClickListener {
         }
         if (v.getId() == R.id.btToHello2) {
             Intent intent;
-            intent = new Intent(this, Hello2.class);
+            intent = new Intent(this, Hello2Activity.class);
             startActivity(intent);
         }
         if (v.getId() == R.id.btToHello3) {

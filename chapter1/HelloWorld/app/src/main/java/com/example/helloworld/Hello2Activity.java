@@ -7,16 +7,16 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class Hello2 extends AppCompatActivity implements View.OnClickListener {
+public class Hello2Activity extends AppCompatActivity implements View.OnClickListener {
 
-    private final static String TAG = "Hello2";
+    private final static String TAG = "Hello2Activity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hello2);
         Log.d(TAG, "onCreate execute");
-        setTitle("Hello2");
+        setTitle("Hello2Activity");
         setupButtons();
     }
 
@@ -66,7 +66,7 @@ public class Hello2 extends AppCompatActivity implements View.OnClickListener {
         }
         if (v.getId() == R.id.btToHello2) {
             Intent intent;
-            intent = new Intent(this, Hello2.class);
+            intent = new Intent(this, Hello2Activity.class);
             startActivity(intent);
         }
         if (v.getId() == R.id.btToHello3) {

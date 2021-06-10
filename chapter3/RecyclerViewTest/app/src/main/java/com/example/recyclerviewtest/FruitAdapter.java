@@ -16,9 +16,9 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder>{
 
     static class ViewHolder extends RecyclerView.ViewHolder {
         View fruitView;
-        ImageView fruitImage;
         TextView fruitName;
         TextView fruitNo;
+        ImageView fruitImage;
 
         public ViewHolder(View view) {
             super(view);
@@ -65,6 +65,7 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder>{
     }
 
     @Override
+
     public int getItemCount() {
         return mFruitList.size();
     }

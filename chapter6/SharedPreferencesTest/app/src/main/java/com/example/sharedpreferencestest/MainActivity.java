@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 SharedPreferences.Editor editor = getSharedPreferences("data", MODE_PRIVATE).edit();
-                editor.putString("name", "Tom");
+                editor.putString("name", "Jerry");
                 editor.putInt("age", 28);
                 editor.putBoolean("married", false);
                 editor.apply();

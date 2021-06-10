@@ -2,8 +2,8 @@ package com.example.recyclerviewtest;
 
 public class Fruit {
 
-    private String name;
     private int imageId;
+    private String name;
 
     public Fruit(String name, int imageId) {
         this.name = name;

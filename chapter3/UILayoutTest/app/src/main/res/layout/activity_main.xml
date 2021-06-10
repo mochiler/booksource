@@ -7,11 +7,10 @@
 
     <Button
         android:id="@+id/button1"
-        android:text="Button 1"
         android:layout_gravity="left|top"
-        app:layout_widthPercent="50%"
+        android:text="按钮一"
         app:layout_heightPercent="50%"
-        />
+        app:layout_widthPercent="50%" />
 
     <Button
         android:id="@+id/button2"

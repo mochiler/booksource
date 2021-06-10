@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 DemoThread thread1 = new DemoThread();
                 Log.d("子线程号：", " "+ thread1.getId()) ;
                 try {
-                    //Thread.sleep(1000);
+                    Thread.sleep(1000);
                     thread1.start();
                 }catch (Exception e){
 

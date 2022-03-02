@@ -13,10 +13,12 @@ public class Hello1 extends AppCompatActivity implements View.OnClickListener {
     private static int objCount = 0;
     private int mObjCount;
 
-
+//活动的生命周期函数，回调函数
+//事件驱动编程
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //与布局文件名必须一样
         setContentView(R.layout.hello_world_layout);
         objCount++;
         mObjCount = objCount;

@@ -7,7 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class Hello3 extends AppCompatActivity implements View.OnClickListener {
+public class Hello3_Activity extends AppCompatActivity implements View.OnClickListener {
     private final static String TAG = "Hello3";
 
     @Override
@@ -73,7 +73,7 @@ public class Hello3 extends AppCompatActivity implements View.OnClickListener {
         }
         if (v.getId() == R.id.btToHello3) {
             Intent intent;
-            intent = new Intent(this, Hello3.class);
+            intent = new Intent(this, Hello3_Activity.class);
             startActivity(intent);
         }
     }

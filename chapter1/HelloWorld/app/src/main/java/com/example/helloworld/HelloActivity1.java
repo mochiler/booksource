@@ -7,7 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class Hello1 extends AppCompatActivity implements View.OnClickListener {
+public class HelloActivity1 extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = "Hello1";
     private static int objCount = 0;
@@ -19,12 +19,12 @@ public class Hello1 extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //与布局文件名必须一样
-        setContentView(R.layout.hello_world_layout);
+        setContentView(R.layout.activity_hello1);
         objCount++;
         mObjCount = objCount;
         Log.d(TAG, mObjCount + "-onCreate execute");
         setTitle("Hello1");
-        settupButtons();
+        setupButtons();
     }
 
     @Override
@@ -68,12 +68,12 @@ public class Hello1 extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         if (v.getId() == R.id.btToHello1) {
             Intent intent;
-            intent = new Intent(this, Hello1.class);
+            intent = new Intent(this, HelloActivity1.class);
             startActivity(intent);
         }
         if (v.getId() == R.id.btToHello2) {
             Intent intent;
-            intent = new Intent(this, Hello2.class);
+            intent = new Intent(this, HelloActivity2.class);
             startActivity(intent);
         }
         if (v.getId() == R.id.btToHello3) {
@@ -88,7 +88,7 @@ public class Hello1 extends AppCompatActivity implements View.OnClickListener {
         }
     }
 
-    private void settupButtons() {
+    private void setupButtons() {
         Button b;
 
         b = (Button) findViewById(R.id.btToHello1);

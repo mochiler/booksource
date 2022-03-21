@@ -1,6 +1,7 @@
 package com.example.helloworld;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -79,12 +80,12 @@ public class HelloActivity1 extends AppCompatActivity implements View.OnClickLis
         if (v.getId() == R.id.btToHello3) {
             Intent intent;
             String string1 = "com.example.helloworld.intent.action.H3";
-            // intent = new Intent(this, Hello3.class);
+     //        intent = new Intent(this, HelloActivity3.class);
             intent = new Intent(string1);
             startActivity(intent);
-//            Intent intent1 = new Intent(Intent.ACTION_VIEW);
-//            intent1.setData(Uri.parse("http://www.hstc.edu.cn"));
-//            startActivity(intent1);
+            Intent intent1 = new Intent(Intent.ACTION_VIEW);
+            intent1.setData(Uri.parse("http://www.hstc.edu.cn"));
+            startActivity(intent1);
         }
     }
 

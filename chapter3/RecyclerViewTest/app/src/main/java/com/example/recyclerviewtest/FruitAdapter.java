@@ -42,7 +42,7 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder>{
             public void onClick(View v) {
                 int position = holder.getAdapterPosition();
                 Fruit fruit = mFruitList.get(position);
-                Toast.makeText(v.getContext(), "you clicked view " + fruit.getName(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(v.getContext(), "点击了条目 " + fruit.getName(), Toast.LENGTH_SHORT).show();
             }
         });
         holder.fruitImage.setOnClickListener(new View.OnClickListener() {
@@ -50,7 +50,7 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder>{
             public void onClick(View v) {
                 int position = holder.getAdapterPosition();
                 Fruit fruit = mFruitList.get(position);
-                Toast.makeText(v.getContext(), "you clicked image " + fruit.getName(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(v.getContext(), "点击了图片 " + fruit.getName(), Toast.LENGTH_SHORT).show();
             }
         });
         return holder;
@@ -61,7 +61,7 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder>{
         Fruit fruit = mFruitList.get(position);
         holder.fruitImage.setImageResource(fruit.getImageId());
         holder.fruitName.setText(fruit.getName());
-        holder.fruitNo.setText(String.valueOf(position+1));
+        holder.fruitNo.setText(String.valueOf(position));
     }
 
     @Override
